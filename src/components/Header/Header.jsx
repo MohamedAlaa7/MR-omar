@@ -44,7 +44,7 @@ const Header = () => {
         <div className={styles.icon1_container}>
           <Image
             className={styles.icons}
-            src="/youtube.svg"
+            src="/iconright.svg"
             alt="icon"
             width={64}
             height={66}
@@ -58,7 +58,7 @@ const Header = () => {
         <div className={styles.icon2_container}>
           <Image
             className={styles.icons}
-            src="/tiktok.svg"
+            src="/iconmiddle.svg"
             alt="icon"
             width={64}
             height={66}
@@ -72,7 +72,7 @@ const Header = () => {
         <div className={styles.icon3_container}>
           <Image
             className={styles.icons}
-            src="/facebook.svg"
+            src="/iconleft.svg"
             alt="icon"
             width={64}
             height={66}
