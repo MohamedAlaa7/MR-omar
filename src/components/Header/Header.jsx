@@ -42,13 +42,13 @@ const Header = () => {
       </div>
       <div className={styles.icons_container}>
         <div className={styles.icon1_container}>
-          {/* <Image
+          <Image
             className={styles.icons}
             src="icon1.svg"
             alt="icon"
             width={64}
             height={66}
-          /> */}
+          />
           <h2>إدارة الدروس بسهولة</h2>
           <p>
             نظّم دروسك واضف مواد تعليمية جديدة
@@ -56,13 +56,13 @@ const Header = () => {
           </p>
         </div>
         <div className={styles.icon2_container}>
-          {/* <Image
+          <Image
             className={styles.icons}
             src="icon2.svg"
             alt="icon"
             width={64}
             height={66}
-          /> */}
+          />
           <h2>متابعة تقدم الطلاب</h2>
           <p>
             تابع تقدم طلابك بشكل مستمر من خلال <br />
@@ -70,13 +70,13 @@ const Header = () => {
           </p>
         </div>
         <div className={styles.icon3_container}>
-          {/* <Image
+          <Image
             className={styles.icons}
             src="icon3.svg"
             alt="icon"
             width={64}
             height={66}
-          /> */}
+          />
           <h2>طرق دفع متكاملة</h2>
           <p>
             وفر للطلاب وأولياء الأمور طرق دفع
