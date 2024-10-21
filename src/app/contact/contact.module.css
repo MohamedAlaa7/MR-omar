@@ -1,0 +1,131 @@
+.contact_container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  padding: 40px;
+}
+.right_section {
+  height: 330px;
+  width: 45%;
+  text-align: center;
+}
+.heading {
+  font-weight: 600;
+  font-size: 50px;
+}
+.help {
+  font-weight: 400;
+  font-size: 24px;
+  color: rgba(92, 93, 95, 1);
+}
+.email,
+.phone {
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(92, 93, 95, 1);
+}
+.contact_icons_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.contact_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+/* Left Section */
+.left_section {
+  box-shadow: 2px 4px 2px 0px rgba(25, 37, 48, 0.12);
+  background-color: rgba(170, 190, 209, 0.2);
+  width: 600px;
+  text-align: center;
+  height: 700px;
+}
+.form_container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.Name_container {
+  display: flex;
+  gap: 16px;
+}
+
+.email_container,
+.phone_container {
+  padding: 5px 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(144, 144, 144, 1);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.firstName,
+.lastName {
+  padding: 8px 16px;
+  border: none;
+  border: 1px solid rgba(144, 144, 144, 1);
+  width: 250px;
+  height: 55px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.email_input,
+.phone_input {
+  width: 100%;
+  padding: 8px 16px;
+  height: 55px;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+}
+
+.textarea_container {
+  height: 120px;
+  width: 100%;
+}
+.massage {
+  resize: none;
+  padding: 5px 15px;
+  border: none;
+  font-weight: 400;
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(144, 144, 144, 1);
+  color: rgba(144, 144, 144);
+}
+.firstName,
+.lastName,
+.email_input,
+.phone_input,
+.massage:focus {
+  outline: none;
+}
+.btn_container {
+  width: 100%;
+  padding: 2px 20px;
+  text-align: center;
+  border: 1px solid var(--btn-color);
+  background-color: var(--btn-color);
+  border-radius: 10px;
+}
+.send {
+  color: #fff;
+  width: 100%;
+  font-size: 17px;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}

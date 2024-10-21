@@ -1,0 +1,48 @@
+.main_container {
+  margin: 1rem 10rem 5rem;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.main1,
+.main2,
+.main3 {
+  background-image: url("../../../public/Background.svg");
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 33%;
+  color: #fff;
+  border-radius: 10px;
+}
+.lessons {
+  width: 138px;
+  height: 42px;
+  padding: 2px 20px;
+  border-radius: 10px;
+  border: 1px solid var(--btn-color);
+  color: #fff;
+  background-color: var(--btn-color);
+  text-decoration: none;
+}
+/* .main2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: aquamarine;
+  height: 33%;
+}
+.main3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: bisque;
+  height: 33%;
+} */
+/* .main_info {
+  display: flex;
+  flex-direction: column;
+} */

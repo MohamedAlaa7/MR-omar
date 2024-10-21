@@ -1,0 +1,68 @@
+const Studentgrades = [
+  {
+    id: 1,
+    title: "امتحان الفصل الأول",
+    data: "12 سبتمبر 2024",
+    result: `${85}%`,
+    status: "ممتحن",
+    pass_img: "pass.svg",
+  },
+  {
+    id: 2,
+    title: "امتحان الفصل الثاني",
+    data: "12 سبتمبر 2024",
+    result: `${80}%`,
+    status: "لم يمتحن",
+    notpass_img: "notpass.svg",
+  },
+  {
+    id: 3,
+    title: "امتحان الفصل الثالت",
+    data: "12 سبتمبر 2024",
+    result: `${70}%`,
+    status: "ممتحن",
+    pass_img: "pass.svg",
+  },
+  {
+    id: 4,
+    title: "امتحان الفصل الرابع",
+    data: "12 سبتمبر 2024",
+    result: `${90}%`,
+    status: "لم يمتحن",
+    notpass_img: "notpass.svg",
+  },
+  {
+    id: 5,
+    title: "امتحان الفصل الخامس",
+    data: "12 سبتمبر 2024",
+    result: `${95}%`,
+    status: "ممتحن",
+    pass_img: "pass.svg",
+  },
+  {
+    id: 6,
+    title: "امتحان الفصل السادس",
+    data: "12 سبتمبر 2024",
+    result: `${75}%`,
+    status: "لم يمتحن",
+    pass_img: "pass.svg",
+  },
+  {
+    id: 7,
+    title: "امتحان الفصل السابع",
+    data: "12 سبتمبر 2024",
+    result: `${85}%`,
+    status: "ممتحن",
+    pass_img: "pass.svg",
+  },
+  {
+    id: 8,
+    title: "امتحان الفصل الثامن",
+    data: "12 سبتمبر 2024",
+    result: `${90}%`,
+    status: "لم يمتحن",
+    notpass_img: "notpass.svg",
+  },
+];
+
+export default Studentgrades;

@@ -1,0 +1,82 @@
+.header_container {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 785px;
+}
+
+.test {
+  height: 700px;
+}
+
+.right_section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 12rem 0 0;
+  gap: 16px;
+}
+
+.heading {
+  font-size: 50px;
+  font-weight: 700;
+  width: 500px;
+  line-height: 80px;
+}
+
+.span {
+  color: var(--btn-color);
+}
+.content {
+  width: 566px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(92, 93, 95, 1);
+}
+
+.left_section {
+  width: 50%;
+}
+
+.mr_omar {
+  object-fit: cover;
+  width: 455px;
+  margin: 3rem 5rem 0 0;
+}
+
+.teacher {
+  width: 100%;
+  height: 98%;
+}
+
+.icons_container {
+  margin: 7rem 0 7rem 0;
+  height: 340px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.icon1_container,
+.icon2_container,
+.icon3_container {
+  width: 367px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon2_container {
+  background-color: rgba(170, 190, 209, 0.2);
+}
+.icon1_container:hover,
+.icon2_container:hover,
+.icon3_container:hover {
+  background: var(--btn-color);
+  transition: 0.4s ease-in-out;
+  border-radius: 10px;
+}
