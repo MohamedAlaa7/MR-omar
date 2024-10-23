@@ -2,8 +2,8 @@
   display: flex;
   width: 70%;
   height: 880px;
-  margin: 2rem auto;
-  justify-content: space-evenly;
+  margin: 10rem auto;
+  gap: 48px;
 }
 .right {
   margin-top: 3rem;
@@ -187,4 +187,25 @@
   align-items: center;
   gap: 16px;
   justify-content: center;
+}
+/* Responsive */
+
+@media only screen and (max-width: 1333px) {
+  .right {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1333px) and (max-width: 1500px) {
+  .container {
+    display: flex;
+    width: 90%;
+    height: 880px;
+    margin: 10rem 3rem 3rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .container {
+    width: 80%;
+  }
 }

@@ -1,8 +1,9 @@
 .pricing_container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 9rem;
 }
 .title {
   margin-bottom: 1rem;
@@ -17,6 +18,7 @@
   display: flex;
   justify-content: space-around;
   margin-top: 5rem;
+  margin-bottom: 3rem;
 }
 .plan1,
 .plan2,
@@ -31,8 +33,9 @@
   border-bottom: 1px solid rgba(92, 93, 95, 0.5);
 }
 .price {
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(92, 93, 95, 1);
 }
 
 .price_details {
@@ -71,3 +74,82 @@
   color: #fff;
   text-decoration: none;
 }
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .plans {
+    height: auto;
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 876px) {
+  .right {
+    gap: 55px;
+  }
+  .plans {
+    height: 700px;
+    gap: 15px;
+    margin-bottom: 3rem;
+  }
+  .plan1,
+  .plan2,
+  .plan3 {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 876px) and (max-width: 1011px) {
+  .icon3,
+  .icon4 {
+    margin-top: 2rem;
+  }
+  .plans {
+    height: 650px;
+    margin-bottom: 3rem;
+    gap: 15px;
+  }
+  .plan1,
+  .plan2,
+  .plan3 {
+    height: auto;
+  }
+}
+@media only screen and (min-width: 1011px) and (max-width: 1049px) {
+  .plans {
+    height: 600px;
+    gap: 15px;
+    margin-bottom: 3rem;
+  }
+  .icon3,
+  .icon4 {
+    margin-top: 2rem;
+  }
+  .plan1,
+  .plan2,
+  .plan3 {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1270px) {
+  .plans {
+    gap: 10px;
+  }
+}
+/* @media only screen and (min-width: 768px) and (max-width: 1089px) {
+  .plans {
+    height: auto;
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    align-items: center;
+    gap: 20px;
+  }
+} */

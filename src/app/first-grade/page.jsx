@@ -46,10 +46,12 @@ const page = () => {
                 />
                 <div className={styles.duration}>
                   <Image src="clock.svg" alt="clock" width={20} height={20} />
-                  <p>{lecture.duration}</p>
+                  <p className={styles.time}>{lecture.duration}</p>
                 </div>
-                <h2>{lecture.title}</h2>
-                <p>{lecture.description}</p>
+                <h2 className={styles.lecture_title}>{lecture.title}</h2>
+                <p className={styles.lecture_description}>
+                  {lecture.description}
+                </p>
                 <button className={styles.watch}>{lecture.buttonText}</button>
               </div>
             ))

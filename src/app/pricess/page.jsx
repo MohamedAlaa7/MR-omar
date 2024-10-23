@@ -37,6 +37,7 @@ const page = () => {
                 priority={true}
               />
               <Image
+                className={styles.icon3}
                 src="right.svg"
                 alt="right"
                 height={24}
@@ -44,6 +45,7 @@ const page = () => {
                 priority={true}
               />
               <Image
+                className={styles.icon4}
                 src="right.svg"
                 alt="right"
                 height={24}

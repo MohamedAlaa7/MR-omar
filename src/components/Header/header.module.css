@@ -5,15 +5,18 @@
   height: 785px;
 }
 
-.test {
+/* .test {
+  background-image: url("../../../public/headercontainer.svg");
   height: 700px;
-}
+  position: relative;
+  margin-top: 6rem;
+} */
 
 .right_section {
   width: 50%;
   display: flex;
   flex-direction: column;
-  margin: 5rem 12rem 0 0;
+  margin: 9.375rem 12rem 0 0;
   gap: 16px;
 }
 
@@ -41,23 +44,23 @@
 .mr_omar {
   object-fit: cover;
   width: 455px;
-  margin: 3rem 5rem 0 0;
+  margin: 5.4375rem 5rem 0 0;
 }
 
 .teacher {
   width: 100%;
-  height: 98%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
 }
 
 .icons_container {
-  margin: 7rem 0 7rem 0;
+  margin: 7rem auto;
   height: 340px;
-  width: 100%;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  gap: 30px;
+  justify-content: center;
+  gap: 32px;
 }
 
 .icon1_container,
@@ -67,11 +70,12 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  padding: 64px 40px 64px 64px;
 }
 .icon2_container {
   background-color: rgba(170, 190, 209, 0.2);
+  border-radius: 10px;
 }
 .icon1_container:hover,
 .icon2_container:hover,
@@ -79,4 +83,32 @@
   background: var(--btn-color);
   transition: 0.4s ease-in-out;
   border-radius: 10px;
+}
+.icon_content {
+  font-size: 16px;
+  color: rgba(92, 93, 95, 1);
+}
+
+.Vector1 {
+  position: absolute;
+}
+/* Rresponsive */
+
+/* Medium and small devices ( 768px and down) */
+@media only screen and (max-width: 800px) {
+  .icons_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25rem;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 970px) {
+  .icon1_container,
+  .icon2_container,
+  .icon3_container {
+    padding: 30px;
+  }
+  .icon_content {
+    line-height: 30px;
+  }
 }

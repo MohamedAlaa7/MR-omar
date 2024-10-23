@@ -28,21 +28,25 @@
   background-color: var(--btn-color);
   text-decoration: none;
 }
-/* .main2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: aquamarine;
-  height: 33%;
+.lessons:hover {
+  background-color: #fff;
+  color: var(--btn-color);
 }
-.main3 {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: bisque;
-  height: 33%;
-} */
-/* .main_info {
-  display: flex;
-  flex-direction: column;
-} */
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  .main_container {
+    margin: 25rem 1rem 3rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .main_container {
+    margin: 25rem 1rem 3rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 992px) {
+  .main_container {
+    margin: 1rem 2rem 3rem;
+  }
+}

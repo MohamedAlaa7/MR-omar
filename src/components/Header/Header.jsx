@@ -7,6 +7,7 @@ const Header = () => {
   return (
     <>
       <div className={styles.test}>
+        hallo
         <div className={styles.header_container}>
           <div className={styles.right_section}>
             <h1 className={styles.heading}>
@@ -33,26 +34,34 @@ const Header = () => {
         </div>
         <Image
           className={styles.teacher}
-          src="header.svg"
-          alt="teacher"
-          width={444}
-          height={600}
+          src="headercontainer.svg"
+          alt="headercontainer"
+          width={1440}
+          height={695}
           priority={true}
         />
       </div>
+
+      {/* Icons  */}
       <div className={styles.icons_container}>
         <div className={styles.icon1_container}>
           <Image
-            className={styles.icons}
-            src="/iconright.svg"
+            className={styles.Vector2}
+            src="/Vector2.svg"
             alt="icon"
             width={64}
             height={66}
           />
+          <Image
+            className={styles.Vector1}
+            src="/Vectortest.svg"
+            alt="icon"
+            width={50}
+            height={50}
+          />
           <h2>إدارة الدروس بسهولة</h2>
-          <p>
-            نظّم دروسك واضف مواد تعليمية جديدة
-            <br /> بنقرة واحدة.
+          <p className={styles.icon_content}>
+            نظّم دروسك واضف مواد تعليمية جديدة بنقرة واحدة.
           </p>
         </div>
         <div className={styles.icon2_container}>
@@ -64,9 +73,9 @@ const Header = () => {
             height={66}
           />
           <h2>متابعة تقدم الطلاب</h2>
-          <p>
-            تابع تقدم طلابك بشكل مستمر من خلال <br />
-            تقارير تفصيلية حول أدائهم في الدروس والاختبارات.
+          <p className={styles.icon_content}>
+            تابع تقدم طلابك بشكل مستمر من خلال تقارير تفصيلية حول أدائهم في
+            الدروس والاختبارات.
           </p>
         </div>
         <div className={styles.icon3_container}>
@@ -78,9 +87,8 @@ const Header = () => {
             height={66}
           />
           <h2>طرق دفع متكاملة</h2>
-          <p>
-            وفر للطلاب وأولياء الأمور طرق دفع
-            <br /> سهلة ومريحة عبر المنصة
+          <p className={styles.icon_content}>
+            وفر للطلاب وأولياء الأمور طرق دفع سهلة ومريحة عبر المنصة
           </p>
         </div>
       </div>

@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div className={styles.contact_container}>
       <div className={styles.right_section}>
-        <h1 className={styles.heading}>تواصل معنا</h1>
+        <h1 className={styles.right_heading}>تواصل معنا</h1>
         <p className={styles.help}>
           نحن هنا لمساعدتك! تواصل مع فريقنا بأكثر من طريقة، سواء عبر الهاتف،
           البريد الإلكتروني، أو من خلال ملء النموذج
@@ -38,8 +38,8 @@ const page = () => {
       {/* Left Section */}
 
       <div className={styles.left_section}>
-        <h1 className={styles.heading}>اترك لنا رسالة</h1>
-        <p className={styles.help}>
+        <h1 className={styles.left_heading}>اترك لنا رسالة</h1>
+        <p className={styles.soon}>
           يرجى ملء البيانات التالية وسنتواصل معك في أقرب وقت ممكن.
         </p>
         <form className={styles.form_container}>
@@ -88,11 +88,7 @@ const page = () => {
             />
           </div>
           <div className={styles.textarea_container}>
-            <textarea
-              id="test"
-              className={styles.massage}
-              placeholder="اترك رسالتك"
-            >
+            <textarea className={styles.massage} placeholder="اترك رسالتك">
               اترك رسالتك
             </textarea>
           </div>

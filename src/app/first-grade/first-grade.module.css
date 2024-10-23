@@ -6,6 +6,8 @@
   flex-direction: column;
   align-items: center;
   background-size: cover;
+  position: relative;
+  margin-top: 6rem;
 }
 .test {
   width: 100%;
@@ -99,16 +101,71 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 5px;
+  gap: 10px;
 }
 .watch {
   background-color: var(--btn-color);
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 4px 120px;
   border-radius: 5px;
   cursor: pointer;
   width: 100%;
-  font-size: 16px;
+  height: 45px;
+  font-size: 17px;
   font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+.time {
+  font-size: 18px;
+  color: rgba(92, 93, 95, 1);
+  font-weight: 400;
+}
+.lecture_title {
+  text-align: right;
+  font-size: 24px;
+  font-weight: 600;
+}
+.lecture_description {
+  text-align: right;
+  width: 328px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(92, 93, 95, 1);
+}
+
+@media only screen and (max-width: 800px) {
+  .content_title {
+    font-size: 55px;
+  }
+  .content {
+    width: 550px;
+  }
+  .search_container {
+    margin-top: 3rem;
+  }
+  .lectures_grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .lectures_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .lectures_container {
+    width: 90%;
+    margin: 4rem auto 3rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .lectures_container {
+    width: 90%;
+    margin: 4rem 1rem 3rem;
+  }
 }

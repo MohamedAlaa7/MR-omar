@@ -3,10 +3,13 @@
 import React from "react";
 import { useState } from "react";
 import styles from "./navbar.module.css";
+import { useRouter } from "next/navigation";
+
 import Link from "next/link";
 import Image from "next/image";
 
 const Navbar = ({ isLoggedIn, onLogin, onLogout, parentlooged }) => {
+  const router = useRouter();
   const [isopen, setIsopen] = useState(false);
 
   const toggleDropdown = () => {
@@ -29,7 +32,7 @@ const Navbar = ({ isLoggedIn, onLogin, onLogout, parentlooged }) => {
 
       {!parentlooged ? (
         <div className={styles.mid_links}>
-          <Link className={styles.link} href="/">
+          <Link className={(styles.link, styles.main)} href="/">
             الرئيسية
           </Link>
           <Link className={styles.link} href="/pricess">
@@ -92,11 +95,11 @@ const Navbar = ({ isLoggedIn, onLogin, onLogout, parentlooged }) => {
               </>
             ) : (
               <>
-                <Link className={styles.link} href="/login">
+                <Link className={styles.link_login} href="/login">
                   <span className={styles.span}>تسجيل الدخول</span>
                 </Link>
-                <Link className={styles.link} href="/create-account">
-                  <span className={styles.span}> انشاء حساب</span>
+                <Link className={styles.link_signin} href="/create-account">
+                  <span className={styles.span_signin}> انشاء حساب</span>
                 </Link>
               </>
             )}
