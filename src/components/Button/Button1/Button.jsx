@@ -1,11 +1,14 @@
 import React from "react";
 import styles from "./button.module.css";
+import Link from "next/link";
 // import "./button.css";
 
 const Button = () => {
   return (
     <>
-      <button className={styles.custom_btn}>انضم الآن</button>
+      <Link href="/create-account" className={styles.custom_btn}>
+        انضم الآن
+      </Link>
     </>
   );
 };

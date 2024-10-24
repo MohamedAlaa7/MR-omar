@@ -65,6 +65,7 @@
   background: transparent;
   border: none;
   cursor: pointer;
+  font-family: "Cairo";
 }
 
 .input[type="number"]::-webkit-inner-spin-button,
@@ -80,7 +81,12 @@
 .input:focus {
   border: 1px solid var(--btn-color);
 }
-
+.input::placeholder {
+  font-family: "Cairo";
+}
+.options {
+  font-family: "Cairo";
+}
 /* .test {
   border: red;
   width: 930px;

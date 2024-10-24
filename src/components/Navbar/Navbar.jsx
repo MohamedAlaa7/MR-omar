@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import styles from "./navbar.module.css";
 import { useRouter } from "next/navigation";
@@ -11,6 +11,7 @@ import Image from "next/image";
 const Navbar = ({ isLoggedIn, onLogin, onLogout, parentlooged }) => {
   const router = useRouter();
   const [isopen, setIsopen] = useState(false);
+  const [menu, setMenu] = useState(false);
 
   const toggleDropdown = () => {
     setIsopen(!isopen);
@@ -18,17 +19,57 @@ const Navbar = ({ isLoggedIn, onLogin, onLogout, parentlooged }) => {
 
   return (
     <nav className={styles.nav_container}>
-      <div>
-        <Link href="/">
-          <Image
-            src="Logo1.svg"
-            alt="logo"
-            height={87}
-            width={170}
-            priority={true}
-          />
-        </Link>
+      <div className={styles.logo_menu_container}>
+        <div>
+          <Link href="/">
+            <Image
+              src="Logo1.svg"
+              alt="logo"
+              height={87}
+              width={170}
+              priority={true}
+            />
+          </Link>
+        </div>
+        <div onClick={() => setMenu(!menu)} className={styles.menu}>
+          <div className={styles.menu_container}>
+            {!menu ? (
+              <>
+                <Image
+                  className={styles.menu_icon}
+                  src="menu.svg"
+                  alt="menu"
+                  height={40}
+                  width={40}
+                  priority={true}
+                />
+              </>
+            ) : (
+              <Image
+                className={styles.cansel_icon}
+                src="cancel.svg"
+                alt="cancel"
+                height={25}
+                width={25}
+                priority={true}
+              />
+            )}
+          </div>
+        </div>
       </div>
+      {menu && (
+        <div className={styles.menu_links_container}>
+          <Link className={styles.menu_link} href="/">
+            الرئيسية
+          </Link>
+          <Link className={styles.menu_link} href="/pricess">
+            التسعير
+          </Link>
+          <Link className={styles.menu_link} href="/contact">
+            تواصل معنا
+          </Link>
+        </div>
+      )}
 
       {!parentlooged ? (
         <div className={styles.mid_links}>

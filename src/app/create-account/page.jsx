@@ -107,9 +107,15 @@ const CreateAccount = () => {
                   id="study-year"
                   className={styles.input}
                 >
-                  <option value="1">الصف الاول الثانوي</option>
-                  <option value="2">الصف الثاني الثانوي</option>
-                  <option value="3">الصف الثالث الثانوي</option>
+                  <option className={styles.options} value="1">
+                    الصف الاول الثانوي
+                  </option>
+                  <option className={styles.options} value="2">
+                    الصف الثاني الثانوي
+                  </option>
+                  <option className={styles.options} value="3">
+                    الصف الثالث الثانوي
+                  </option>
                 </select>
               </div>
 
